@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body style=" height: 100px;background-color:salmon; ">
+   
+    <nav class="container navbar navbar-expand-sm bg-light ;">
+        <a class="navbar-brand"href="#">
+            <img src="data:image/jpeg;base64,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" alt="logo" style="width: 100px;">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    HOME
+                </a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#10">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#1">DESCRIPTION</a>
+          </li>
+        </ul>
+        <div style="text-align: right;" class="navbar ml-auto">
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="text-align: right;" >AVAILABILITY</button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="text-align: center;">BOOKINGS:</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <div>
+                              <label for="sdate" >CHECK IN</label>
+                              <input type="datetime-local"id="sdate" name="check in date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <label for="edate" >CHECK OUT</label>
+                              <input type="datetime-local" id="edate" name="check out date">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="alert('Your Booking is complteted,thank you for choosing us')">Submit</button>
+                        </div>
+                      </div>
+                      </div>
+        </div>
+        </div>
+        </div>
+      </nav>
+     
+      <header>
+        <h1 style="text-align: center;background-image:url('10.jpg')">THE ICE</h1>
+    </header>
+   
+    <marquee class="text-danger" scrolldelay="50"; ><h3>FALL IN LOVE WITH ANTARCTICA:)</h3></marquee>
+    <div class="container" style="background-color: azure;">
+    <div class="row">
+        <div class="col-sm-4"><a href="#1"><img src="https://www.cruisemapper.com/images/ports/3085-b459948ab75.jpg" class="img-thumbnail"></a> </div>
+        <div class="col-sm-4"><a href="#2"><img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2014/11/shutterstock-537162505-kw-140717-Penguins-in-front-of-an-Antarctic-cruise-ship-around-the-South-Shetland-Islands-in-Antarctica.jpg" class="img-thumbnail"></a> </div>
+        <div class="col-sm-4"><a href="#3"><img src="https://assets3.thrillist.com/v1/image/2852877/1584x3000/scale;jpeg_quality=60.jpg" class="img-thumbnail"></a> </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"><a href="#4"><img src="https://assets3.thrillist.com/v1/image/2853328/1584x3000/scale;jpeg_quality=60.jpg" class="img-thumbnail"></a> </div>
+        <div class="col-sm-4"><a href="#5"><img src="https://assets3.thrillist.com/v1/image/2853329/1584x3000/scale;jpeg_quality=60.jpg" class="img-thumbnail"> </a></div>
+        <div class="col-sm-4"><a href="#6"><img src="https://assets3.thrillist.com/v1/image/2853331/1584x3000/scale;jpeg_quality=60.jpg" class="img-thumbnail"></a> </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"><a href="#7"><img src="https://assets3.thrillist.com/v1/image/2853332/1584x3000/scale;jpeg_quality=60.jpg" class="img-thumbnail"> </a></div>
+        <div class="col-sm-4"><a href="#8"> <img src="https://assets3.thrillist.com/v1/image/2852876/1584x3000/scale;jpeg_quality=60.jpg" class="img-thumbnail"> </a></div>
+        <div class="col-sm-4"><a href="#9"><img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/02/00_2322_Antarctica_-_Lemaire_Channel.jpg" class="img-thumbnail"> </a> </div>
+    </div>
+</div>
+<div class="container" style="background-color: thistle;">
+<div id="1">
+    <p>
+        <h2>1.PORT LOCKROY</h2>
+        A natural harbour located on the north-western shore of Wiencke island is one of the most popular places to visit. The tourist spot makes way for being one of the most popular tourist destinations for a large array of cruise-ship passengers in Antarctica. This is a natural harbour that was originally used for whaling and then in the form of a military base during the time of the Second World War. This was soon followed by the place being used as a research station. The port is now a historic site consisting of post office and museum with being a popular halt point for travellers exploring Antarctica. Half of Wiencke Island is now closed for the tourists as only penguins are allowed to thrive.
+    <br>                                                                                              
+<strong>LOCATION:</strong>North-western Shore of Wiencke Island<br>
+<strong>POPULAR FOR:</strong> Visit Penguin Post Office, Visit Bransfield House<br>
+    </p></div>
+ <div id="2">
+     <p>
+         <h2>2.SOUTH SHETLAND ISLANDS</h2>
+         Situated at a distance of 160km north of the Antarctic Peninsula, the spectacular South Shetland Island is one of the most visited sites in Antarctica. The island is completely covered in ice and is home to some of the most incredible fjords and glaciers. The rocky coastlines, on the other hand, are inhabited by elephant seals and penguins. Eight distinct countries maintain research stations on the islands all year round, with the majority of the stations being located on King George Island. Some of the other well-known islands include Deception Island, which is widely popular for being a collapsed yet active volcanic cone.
+       <br> <strong>LOCATION:</strong>North of Antarctic Peninsula<br>
+       <strong>POPULAR FOR:</strong>Deception island the active volcanic zone, penguins, elephant seals, a snow-clad island    
+        </p>
+ </div>   
+ <div id="3">
+     <p>
+         <h2>3.DRAKE PASSAGE</h2>
+         The passage includes a wide stretch of water between South America and Antarctica that inspires a world of adventure and dread. Tourists visiting the place need to be aware of the churning caused in the stomach due to the waves, gales and excitement. Enjoy watching giant albatross right from the deck while joining your way to the fascinating wildlife and geography knowledge sessions. As you slowly approach the frozen continent, you are sure to never forget the very first sighting of the spectacular colossal iceberg, a treat in its own kind.
+        <br> <strong>LOCATION:</strong>Situated between South America and Antarctic<br>  
+        <strong>POPULAR FOR:</strong> Colossal Iceberg, giant albatross along with fascinating wildlife 
+        </p>
+ </div>
+ <div id="4">
+     <p>
+         <h2>4.DECEPTION ISLAND</h2>
+         Speaking of volcanoes, Deception Island—a straight-up caldera—is a long-time favorite among Antarctica visitors. A former whaling station, these days the Deception Island harbor plays hosts to tourists and scientists alike -- it’s one of the places you’ll be able to leave your ship and see all those penguins from land, preferably from the comfort of a warm natural hot tub dug into the beach.
+        <br><strong>LOCATION:</strong> South Shetland Islands close to the Antarctic Peninsula<br>
+        <strong>POPULAR FOR:</strong>several colonies of chinstrap penguins, as well as the possibility of making a warm bath by digging into the sands of the beach.
+        </p>
+ </div>
+ <div id="5">
+     <p>
+         <h2>5.ANTARCTIC PENINSULA</h2>
+         This is the northernmost part of Antarctica and is home to a large array of polar wildlife. It comprises iceberg strewn waterways along with narrow passages which are frequented by expedition cruises with landings made on natural harbours and outlying islands of the Antarctic Peninsula. Tourists visit the peninsula for the breathtaking scenery with a combination of expansive skies, towering glaciers. Apart from being a visual treat to the eyes, the place is also popular for penguin rookeries along with cormorant colonies. The migration season offers varied opportunities to spot Minke, humpback and killer whales at closer proximity.
+     <br><strong>LOCATION:</strong>Northernmost part of Antarctica<br>
+     <strong>POPULAR FOR:</strong>Spotting unique species of whales, towering glaciers, narrow passages and so on
+        </p>
+ </div>
+ <div id="6">
+     <p>
+         <h2>6.SOUTH ORKNEY ISLAND</h2>
+         Northeast of the Antarctic Peninsula lie the South Orkney Islands. Frigid, windy, and generally inhospitable, these magnificent islands are home to two research stations.Despite the harsh conditions the islands do support vegetation and constitute the South Orkney Islands tundra ecoregion. All islands lie in the cold seas below the Antarctic convergence. These areas support tundra vegetation consisting of mosses, lichens and algae, while seabirds, penguins and seals feed in the surrounding waters.
+     <br><strong>LOCATION:</strong>group of islands in the Southern Ocean<br>
+     <strong>POPULAR FOR:</strong>the South Orkney Islands were frequently visited by sealers and whalers
+        </p>
+ </div>
+ <div id="7"> 
+     <p>
+         <h2>7.FALKLAND ISLAND</h2>
+         This save-based Falkland Islands is known for its abundant biodiversity, which makes it one of the most popularly visited spots in Antarctica. The island reflects a bit of Britain due to its architecture and design. Offering a wide array of nesting areas, the islands offer the ultimate birding experience along with a large number of marine animals. While on tour to the island, visitors can enjoy the sight of enormous albatross gliding above with four distinct species of penguins nesting on the shoreline. Meet people that are shared on the island in Port Stanley whole exploring their lifestyle and habits. Enjoy touring around in Port Stanley, home to the wide array of fish, chip chop along with red phone boxes.
+        <br><strong>LOCATION:</strong> Near Arctic Peninsula
+        <br><strong>POPULAR FOR:</strong> Explore wildlife, visit Historic Dockyard Museum, Monuments, Cemeteries, Small villages near East Falkland, Stanley, Penguins of Volunteer Point and so on.    
+        </p>
+ </div>
+ <div id="8">
+     <p>
+         <h2>8.SOUTH GEORGIA ISLAND</h2>
+         South Georgia boasts a narrow and long island that is referred to as the Alps located in the mid-ocean. Thanks to the rising mountains covering much of the land mass, the Alps are named so. Enjoy the most picturesque parts of the place with the low-lying grasslands, mighty glaciers along with dramatic fjords. With these in abundance, it is undoubtedly one of the most visited sites in the region. The place is widely visited due to the beaches that are thrived by penguin colonies and seals. The photogenic remains of whaling stations along with the relics make the place a visit-worthy. With the ease of landing on the island, tourism has become increasingly popular.
+        <br><strong>LOCATION:</strong>Island in Southern Atlantic Ocean<br>
+        <strong>POPULAR FOR:</strong>Visit Fortuna Bay, explore the history of the land, visit beaches that are penguin packed, witness the breathtaking beauty of the glaciers
+     </p>
+ </div>
+ <div id="9">
+     <p>
+         <h2>9.LEMAIRE CHANNEL</h2>
+         A trip to Antarctica is incomplete without cruising along the stunning Lemaire Channel. Glaciers, icebergs and sheer cliffs dominate the area which lies above the water. With these wonderful creations lying above, humpback whales and behemoths lie below. While on your expedition to this gorgeous place, keep an eye out for orcas as well. The channel is completely precarious with being 1600m narrow and having plenty of loose icebergs. A heaven for the photographers, the scenery offers a breathtaking mirror view which is almost a dream to the photographers.
+        <br><strong>LOCATION:</strong> Kiev Peninsula in Graham Land
+        <br><strong>POPULAR FOR:</strong>Explore the wildlife, photography
+        </p>
+    </div>
+ </div>
+ <div id="10" class="container-fluid" style="text-align: center;background-color: azure";>
+    <h2>ADDRESS:</h2>
+    <p>
+        <strong>129-12-98/B,<br>
+     Flamezo Avenu,<br>
+      Auburn,
+      Sydeny,<br>
+      Australia.2017.<br></strong> 
+    </p>
+    <h2>CONTACT US</h2>
+    <p>
+        &#9742;:+9573839278.
+        &#128231;:Traveldiaries@gmail.com<br>
+        <strong>FOR DIRECT ACCESS CLICK THE ICONS BELOW:</STRONG><BR>
+        </p>
+        <div class="btn-group" role="group">
+            <a role="button" class="btn btn-primary" href="tel:+9573839278"><i class="fa fa-phone fa-lg"></i>Call</a> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <a role="button" class="btn btn-success" href="mailto:nitinkanna89@gmail.com"><i class="fa fa-envelope fa-lg">Mail</i></a>
+        </div>
+</div>
+</body>
+</html>
